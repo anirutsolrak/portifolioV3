@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Carlos Eduardo Turina</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Highlight.js CSS -->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="index.html">SOBRE MIM</a></li>
+                    <li><a href="curriculo.html">CURRÍCULO</a></li>
+                    <!--  <li><a href="contato.html">CONTATO</a></li> -->
+                </ul>
+            </nav>
+            <div class="menu-mobile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section id="projetos">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="projects-content">
+                <div class="project">
+                    <img src="thumb_jogo.jpg" alt="Projeto 1">
+                    <h3>Jogo do Número Secreto</h3>
+                    <h4>Jogo em JavaScript</h4>
+                    <p>Um jogo interativo para adivinhar um número secreto, desenvolvido em JavaScript.</p>
+                    <a href="https://jogo-rouge-three.vercel.app" target="_blank" class="btn" id="baixar-cv">Experimente</a>
+                </div>
+
+                <div class="project">
+                    <img src="thumb_descript.jpg" alt="Projeto 2">
+                    <h3>Descriptação e Encriptação de Texto</h3>
+                    <h4>Aplicativo em JavaScript</h4>
+                    <p>Um aplicativo web que permite criptografar e descriptografar mensagens de texto, garantindo a segurança da informação.</p>
+                    <a href="https://encriptacao.vercel.app" target="_blank" class="btn" id="baixar-cv">Experimente</a>
+                </div>
+
+                <div class="project">
+                    <img src="quiz.jpg" alt="Projeto Quiz">
+                    <h3>Quiz</h3>
+                    <h4>Quiz em JavaScript</h4>
+                    <p>Um quiz interativo que testa seus conhecimentos sobre diversos assuntos, com interface amigável e feedback instantâneo.</p>
+                    <a href="https://quiz-rho-dusky-73.vercel.app" target="_blank" class="btn" id="baixar-cv">Experimente</a>
+                </div>
+
+                <div class="project" id="chatbot">
+                    
+                    <h3>Caso de estudo <br>Chatbot de Recomendações com Gemini</h3>
+                    <h4>Inteligência Artificial no Google Colab</h4>
+
+                    <p>Desenvolvi um chatbot interativo no Google Colab utilizando o modelo de linguagem Gemini do Google AI Studio. 
+                        O chatbot oferece recomendações personalizadas de produtos ou entretenimento com base nas preferências do usuário. 
+                        <a href="https://github.com/anirutsolrak/ChatBot" target="_blank">Veja o código no GitHub</a>.
+                    </p>
+
+                    <p>
+                        <strong>Desafios:</strong>
+                        <ul>
+                            <li>Criação de interface amigável no Colab.</li>
+                            <li>Comunicação entre frontend e backend (JavaScript e Python).</li>
+                            <li>Gerenciamento de estados do Dash.</li>
+                            <li>Extração e formatação de dados da resposta do Gemini.</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        <strong>Tecnologias:</strong>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>Python</li>
+                            <li>Google Colab</li>
+                            <li>API do Google AI Studio</li>
+                            <li>Modelo Gemini</li>
+                            <li>IPython.display.HTML</li>
+                            <li>google.colab.kernel.invokeFunction</li>
+                            <li>Expressões Regulares</li>
+                        </ul>
+                    </p>
+
+                    <p>
+                        <strong>Resultados:</strong>
+                        Chatbot funcional que permite ao usuário receber recomendações personalizadas de acordo com suas preferências.
+                    </p>
+
+                    <p>
+                        <strong>Próximos passos:</strong>
+                        <ul>
+                            <li>Aprimorar a interface do usuário.</li>
+                            <li>Implementar histórico de conversas e feedback do usuário.</li>
+                            <li>Explorar a possibilidade de hospedar o chatbot em um servidor web.</li>
+                        </ul>
+                    </p>
+
+                    <p><strong>Código Final (Python):</strong></p>
+                    <pre><code class="python">
+from IPython.display import HTML, display
+import google.generativeai as genai
+import re
+import json
+
+# Configura a API Key do Google AI Studio - NÃO ESQUEÇA DE INSERIR SUA API KEY AQUI!
+genai.configure(api_key='SUA_API_KEY') 
+model = genai.GenerativeModel('gemini-pro')
+
+# Função para gerar as recomendações
+def gerar_recomendacoes(opcao, produto=None, objetivo=None, descricao=None, momento=None, busca=None, genero=None):
+    # ... (código da função - sem alterações)
+
+# Função para exibir a interface HTML
+def exibir_interface():
+    # ... (código da função - sem alterações)
+
+# Chamar a função para exibir a interface
+exibir_interface()
+                    </code></pre>
+                </div>
+
+            </div> 
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contato</h3>
+                    <p>Telefone: (11) 9 3962-1151</p>
+                    <p>Email: carloseduardoturina@gmail.com</p>
+                </div>
+                <ul class="social-media" id="social-media-hide">
+                    <li><a href="https://www.linkedin.com/in/carlos-eduardo-turina-014a5425b" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/anirutsolrak"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <div class="copyright">
+                    <p>© 2023 por Carlos Eduardo Turina. <br>
+                        Criado com google IA Studio
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Highlight.js JavaScript -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <script src="script.js"></script>
+</body>
+</html>

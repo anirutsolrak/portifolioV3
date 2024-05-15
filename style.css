@@ -1,0 +1,468 @@
+/* Estilos gerais */
+body {
+    font-family: 'Arial', sans-serif; /* Ou 'Helvetica', sans-serif */
+    margin: 0;
+    background-color: #000000; 
+    color: #FFFFFF; 
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 2px;
+}
+
+/* Títulos */
+h1, h2, h3 {
+  margin: 50px auto;
+    font-weight: bold;
+    color: #7CFC00; 
+}
+
+h1 {
+    font-size: 36px; /* Ajuste o tamanho conforme necessário */
+}
+
+h2 {
+    font-size: 28px; /* Ajuste o tamanho conforme necessário */
+}
+
+h3 {
+    font-size: 20px; /* Ajuste o tamanho conforme necessário */
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #7CFC00; 
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #98FB98; 
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #7CFC00; 
+    color: #000000; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #98FB98; 
+}
+
+/* Header */
+header {
+    background-color: #000000; 
+    padding: 8px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+nav {
+    float: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 4rem;
+}
+
+nav a {
+    font-size: 16px;
+    color: #FFFFFF; 
+    font-weight: bold;
+}
+
+.menu-mobile {
+    display: none;
+    float: right;
+    cursor: pointer;
+}
+
+.menu-mobile span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF; 
+    margin: 5px 0;
+}
+
+/* Hero */
+#hero {
+    background-color: #000000; 
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #7CFC00; 
+}
+
+.profile h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.profile h3 {
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-media {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-media li a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #7CFC00; 
+    color: #000000; 
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.social-media li a:hover {
+    background-color: #98FB98; 
+}
+
+.hero-text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.hero-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Currículo */
+#curriculo {
+    background-color: #000000; 
+    padding: 60px 0;
+}
+
+#curriculo h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.curriculo-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience, 
+.education, 
+.skills, 
+.languages {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.experience h3, 
+.education h3, 
+.skills h3, 
+.languages h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-item,
+.education-item {
+    background-color: #181818; /* Um tom de cinza escuro */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.experience-item h4,
+.education-item h4 {
+    font-size: 16px;
+    color: #FFFFFF; 
+    margin-bottom: 10px;
+}
+
+.experience-item h5,
+.education-item h5 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #7CFC00; 
+}
+
+.experience-item p,
+.education-item p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.skills ul, 
+.languages ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.skills li, 
+.languages li {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#baixar-cv {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+/* Projetos */
+#projetos {
+    background-color: #000000; 
+    padding: 60px 0;
+}
+
+#projetos h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+
+.project {
+    background-color: #181818; /* Um tom de cinza escuro */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+}
+
+.project h3 {
+    font-size: 18px;
+    margin: 20px;
+    margin-bottom: 10px;
+    color: #7CFC00; 
+}
+
+.project h4 {
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 20px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+    margin-bottom: 20px;
+}
+
+#chatbot {
+  display: flex;
+  margin: 4rem 10rem;
+  align-self: center;
+  flex-direction: column;
+  align-content:  space-around;
+  width: 65%;
+  height: 50%;
+}
+
+/* Footer */
+footer {
+    background-color: #7CFC00; 
+    color: #000000; 
+    padding: 40px 0;
+    text-align: center; 
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.copyright {
+    margin-top: 20px; 
+}
+
+.copyright p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+/* Separadores de Seção */
+.container::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #FFFFFF; 
+    margin: 40px 0; /* Ajuste o espaçamento conforme necessário */
+}
+
+/* Media Queries - Layout Desktop */
+@media (min-width: 768px) {
+    #container-header {
+        display: flex;
+    }
+
+    .container {
+        padding: 2px;
+    }
+
+    .hero-content {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .hero-content img {
+        width: 85%;
+        height: auto;
+    }
+
+    .profile {
+        text-align: left;
+        width: 35%;
+    }
+
+    .hero-text {
+        text-align: left;
+        width: 55%;
+    }
+
+    .hero-text h1 {
+      margin: 50px;
+        font-size: 48px; 
+    }
+
+    .hero-text h2 {
+        font-size: 36px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    /* Currículo */
+    .curriculo-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .experience,
+    .education,
+    .skills,
+    .languages {
+        width: 48%; 
+    }
+
+    #baixar-cv {
+        margin-top: 40px;
+    }
+
+    /* Projetos */
+    .projects-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .project {
+        width: 31%; 
+    }
+
+    /* Footer */
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .contact-info,
+    .social-media,
+    .copyright {
+        width: auto; 
+    }
+}
