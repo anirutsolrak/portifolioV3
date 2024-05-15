@@ -426,7 +426,8 @@ footer {
 
     /* Currículo */
     .curriculo-content {
-        flex-direction: row;
+        flex-direction: column;
+      align-content: center;
         flex-wrap: wrap;
         justify-content: space-between;
     }
@@ -435,7 +436,7 @@ footer {
     .education,
     .skills,
     .languages {
-        width: 48%; 
+        width: 65%;
     }
 
     #baixar-cv {
